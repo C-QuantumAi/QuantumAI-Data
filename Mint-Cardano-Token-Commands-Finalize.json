@@ -1,0 +1,23 @@
+$ echo -n "QuantumAI" | xxd -ps
+
+354a6c0acd846b195768ead31c92693ad26d82ba013e7df5d9777081
+
+token-metadata-creator entry --init 354a6c0acd846b195768ead31c92693ad26d82ba013e7df5d9777081
+
+token-metadata-creator entry 354a6c0acd846b195768ead31c92693ad26d82ba013e7df5d9777081 \
+  --name "QuantumAI"  \
+  --description "Quantum AI Computing" \
+  --policy policy.json
+
+token-metadata-creator entry 354a6c0acd846b195768ead31c92693ad26d82ba013e7df5d9777081 \
+  --ticker "QAI" \
+  --url "https://QuantumAI.Computer" \
+  --logo "https://github.com/C-QuantumAi/QuantumAI/blob/main/QuantumAI-Logo.png" \
+  --decimals 0
+
+token-metadata-creator entry 354a6c0acd846b195768ead31c92693ad26d82ba013e7df5d9777081 -a policy.skey
+
+token-metadata-creator entry 354a6c0acd846b195768ead31c92693ad26d82ba013e7df5d9777081 --finalize
+
+
+
